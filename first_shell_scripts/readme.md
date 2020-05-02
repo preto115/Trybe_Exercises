@@ -1,7 +1,7 @@
 
 turn_around_life
 
-Este repositório foi criado para armazenar os exercícios de shellscripts feitos enquanto aluno na Trybe.
+Este pasta foi criado para armazenar os meus primeiros exercícios de shellscripts feitos enquanto aluno na Trybe.
 
 Exercicio_1: Imprime na tela a frase "Shell Script é demais!"
 
