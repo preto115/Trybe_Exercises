@@ -1,4 +1,4 @@
 #!/bin/bash
 #Eu sou Tryber e ...
 
-echo "Este script é demais! "
+echo "Shell script é demais! "
