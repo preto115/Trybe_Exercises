@@ -6,7 +6,7 @@ read ARQUIVO
 if [ -e $ARQUIVO ]
 	then
 	printf "O caminho `pwd`/$ARQUIVO está HABILITADO!\n"
-	if [ -w $ARQUIVO ]
+	if [ -w  $ARQUIVO ]
 		then	
 			printf "Você tem permissão para editar `pwd`/$ARQUIVO\n"
 		else	
