@@ -4,7 +4,7 @@ echo "Digite um número: "
 read num1
 echo "Digite outro número: "
 read num2
-printf "===================\n\n "
+printf "===================\n\n"
 
 echo "$num1 + $num2  = $[num1 + num2]"
 echo "$num1 - $num2  = $[num1 - num2]"
