@@ -1,28 +1,22 @@
 #!/bin/bash
-
-#echo "Digite o nome de um arquivo ou diretório" 
-ARQUIVO=`ls -d ./*` 
-printf "\n"
+#ARQUIVO=$@
+ARQUIVO=`ls $@` 
 
 for item in $ARQUIVO
 do
-if [ -f $item ]
+if [ -f "$item" ]
         then
-        printf "$item é um arquivo!\n\n"
+        printf "$item é um arquivo!\n"
 
-elif [ -d $item ]
+elif [ -d "$item" ]
         then
-        printf  "$item é um diretório\n\n"
+        printf  "$item é um diretório\n"
 
 else
-	 print "$item é um outro de arquivo qualquer!\n"
+        printf "$item é um outro tipo de arquivo qualquer!\n"
 fi
+#ls -lad "$item"
 done
-#ls -ld $ARQUIVO
-                      
-
-
-
 
 
 
