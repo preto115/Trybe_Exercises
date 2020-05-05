@@ -1,7 +1,5 @@
 #!/bin/bash
 ARQUIVO=$@
-#ARQUIVO=`ls $@` 
-
 for item in $ARQUIVO
 do
 if [ -f "$item" ]
@@ -15,7 +13,7 @@ elif [ -d "$item" ]
 else
         printf "$item é um outro tipo de arquivo qualquer!\n"
 fi
-#ls -lad "$item"
+ls -lad "$item"
 done
 
 
