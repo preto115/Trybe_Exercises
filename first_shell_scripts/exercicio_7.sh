@@ -12,7 +12,7 @@ elif [ -d $ARQUIVO ]
         then
         printf  "$ARQUIVO é um diretório\n\n"
 
-else print "$ARQUIVO é um outro tipo de arquivo qualquer!\n"
+else printf "$ARQUIVO é um outro tipo de arquivo qualquer!\n"
 fi
 ls -lda $ARQUIVO
                       
