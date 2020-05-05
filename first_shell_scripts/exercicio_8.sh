@@ -1,6 +1,6 @@
 #!/bin/bash
-#ARQUIVO=$@
-ARQUIVO=`ls $@` 
+ARQUIVO=$@
+#ARQUIVO=`ls $@` 
 
 for item in $ARQUIVO
 do
