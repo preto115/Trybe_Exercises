@@ -1,4 +1,5 @@
 // programa que verifica dse um numero é positivo, negativo ou zero e retorna o resultadodo exercicio_4
+
 let num = 4;
 if (num == 0){
 
