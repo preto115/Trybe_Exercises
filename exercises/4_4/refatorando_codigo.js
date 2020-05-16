@@ -1,4 +1,5 @@
 //bloco 4.4
+
 // programa feito para refatorar a primeira parte dos exercicios do bloco 4.1 e implementa-los como funcoes.
 
 let num1 = 4, num2 = 15;
