@@ -7,7 +7,7 @@ if (n > 1){
 let linha =''
 for( let cont = 0; cont < n; cont++){
 
-    linha +="* ";
+    linha +="*";
     console.log(linha);
 }
 
