@@ -20,6 +20,6 @@ nota: "Namorada do personagem do principal nos quadrinhos do Pato Donald"
 info.recorrente = "Sim";
 
 for(chave in info){
-    console.log(chave);
+    console.log(info[chave]);
 }
 
