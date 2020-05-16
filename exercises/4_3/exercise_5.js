@@ -29,7 +29,7 @@ let linhaEsquerda = linhaDoMeio;
                 espaco +=" ";
             }
 }
-//imprime no console o conteudo armazenado anteriormente da variavel
+//imprime no console o conteudo armazenado anteriormenteda variavel
 console.log(espaco);
 }
     
