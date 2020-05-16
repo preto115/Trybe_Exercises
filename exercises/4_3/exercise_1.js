@@ -1,5 +1,13 @@
 //bloco 4 / dia 3
-//programa que faz desenha na tela um quadrado de asterisco de lado e tamnho = n, sendo n o valor definido.
+//programa que faz desenha na tela um quadrado de hashtags de lado e tamnho = n, sendo n o valor definido.
+/*
+# # # # # 
+# # # # # 
+# # # # # 
+# # # # # 
+# # # # # 
+*/
+
 let n = 5;
 let contador=0;
 
