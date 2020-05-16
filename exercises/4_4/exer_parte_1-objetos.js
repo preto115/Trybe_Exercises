@@ -1,5 +1,15 @@
 //bloco 4_4
-//exercicio 1, acessando propriedades dentro de um objeto
+//exercicio 3, acessando propriedades dentro de um objeto
+// mostrando todas as propriedades dod objeto:
+/*
+Saída no console:
+_______________
+personagem
+origem
+nota
+recorrente
+_____________
+*/
 
  let info = {
 personagem: "Margarida",
@@ -8,4 +18,8 @@ nota: "Namorada do personagem do principal nos quadrinhos do Pato Donald"
 };
 
 info.recorrente = "Sim";
-console.log(info);
+
+for(chave in info){
+    console.log(chave);
+}
+
