@@ -14,8 +14,7 @@ _____________
  let info = {
 personagem: "Margarida",
 origem: "Pato Donald",
-nota: "Namorada do personagem do principal nos quadrinhos do Pato Donald",
-recorrente: "Sim"
+nota: "Namorada do personagem do principal nos quadrinhos do Pato Donald"
 
 };
 let info3 = {
@@ -25,6 +24,14 @@ let info3 = {
     recorrente: "Sim"
 }
 let info2 = {};
+
+/*para inserir mais propriedade num objeto podemos fazer dos seguinte modos
+
+info.recorrente= "Sim"; 
+info["recorrente"] = "Sim";
+
+*/
+console.log("Bem-vinda, ",info.personagem);
 
 for(chave in info){
   // console.log(chave,":",info[chave]); 
