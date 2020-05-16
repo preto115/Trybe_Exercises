@@ -14,12 +14,29 @@ _____________
  let info = {
 personagem: "Margarida",
 origem: "Pato Donald",
-nota: "Namorada do personagem do principal nos quadrinhos do Pato Donald"
-};
+nota: "Namorada do personagem do principal nos quadrinhos do Pato Donald",
+recorrente: "Sim"
 
-info.recorrente = "Sim";
+};
+let info3 = {
+    personagem: "Tio patinhas",
+    origem: "Christimas on Bear Mountain, Dell\'s Four Color Comics",
+    nota: "O último MacPatinha",
+    recorrente: "Sim"
+}
+let info2 = {};
 
 for(chave in info){
-    console.log(info[chave]);
+  // console.log(chave,":",info[chave]); 
+   info2[chave] = info3[chave];
 }
+for(chave in info2,info){
+    if( info[chave] == info2[chave]){
+        console.log("Ambos", chave );
+    }
+    
+    else console.log(info[chave]," e ", info2[chave]);
+
+}
+
 
