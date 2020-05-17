@@ -2,11 +2,14 @@
 // verifica e retorna o numero com  a quantidade maior de repeticoes dentro de um array
 
 let arr = [ 2, 3, 4, 5, 8, 2, 4, 3, 1, 2, 4];
-let maisVezes = 0, contador = 0, maior = [];
-// variaveis pra armazer o maior 
+
+// declaracao de uma vetor com 2 numeros cocm numero de repeticoes iguais
 
 function retornaQtNumeroRepete(numeros){
-    for (i = 0; i < numeros.length ; i++){   //laco para percorrer o vetor 
+
+    let maisVezes = 0, contador = 0, maior = [];// declaracao de variaveis par auxiliar
+
+    for (i = 0; i < numeros.length ; i++){   //laco para para comparar numeros de um vetor entre si
         contador = 0;
         for (j = 0; j < numeros.length ; j++){  
             if( numeros[i] === numeros[j]){
@@ -33,6 +36,6 @@ function retornaQtNumeroRepete(numeros){
         return maior;       // retornando os resultados
 }
 let resultado = retornaQtNumeroRepete(arr);
-    for( a = 0; a < resultado.length; a++){
+    for( a = 0; a < resultado.length; a++){     // laco para imprimir mais de uma numero repetido
             console.log(resultado[a]);
     }
