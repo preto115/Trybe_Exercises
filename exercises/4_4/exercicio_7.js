@@ -2,7 +2,7 @@
 // compara duas strings e retorna verdadeiro se a segunda string for exatamente o fim da primeira string.
 
 let stringWord = "Paralelepipedo";
-let stringEnding= "pipedo";
+let stringEnding= "inconstitucionaliscimamente";
 
 
 function verificaFimPalavra( word , ending){
@@ -20,7 +20,10 @@ if( word.length > ending.length){               // condicao para realizar o test
         verdade = true;
     }       
 }
-else console.log("Impossível comparar as strings"); 
+else {
+    console.log("Impossível comparar as strings"); 
+return 0;
+}
 return verdade;
 }
 console.log(verificaFimPalavra( stringWord , stringEnding));  //imprimindo o retorno da funcao direto

@@ -39,3 +39,24 @@ let resultado = retornaQtNumeroRepete(arr);
     for( a = 0; a < resultado.length; a++){     // laco para imprimir mais de uma numero repetido
             console.log(resultado[a]);
     }
+
+    
+/*
+    
+   function higherValue(integers) {   let repeats = {};    
+   for (let index in integers) {
+            repeats[integers[index]] = repeats[integers[index]] !== undefined ? repeats[integers[index]] += 1 : 1;
+          }    let mostTimesCounter = 0;
+          let mostTimes = 0;
+          for (let propertie in repeats) {
+                if(repeats[propertie] > mostTimesCounter) {
+                      mostTimesCounter = repeats[propertie];
+                      mostTimes = propertie
+                    }
+                  }
+                   return mostTimes;
+                } 
+                let integers = [3, 2, 3, 2, 5, 8, 2, 3]; 
+                console.log(higherValue(integers)); 
+
+*/

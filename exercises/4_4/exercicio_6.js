@@ -1,5 +1,5 @@
 // exercicio_6 parte_2 funcoes bloco 4_4
-// Retorna o Fatorial de um numero ( soma sequencial de todos os numeros abaixo do numero dado, incluise o proprio numero)
+// Retorna o soma de um numero ( soma sequencial de todos os numeros abaixo do numero dado, incluise o proprio numero)
 
 let num = 5;
 
