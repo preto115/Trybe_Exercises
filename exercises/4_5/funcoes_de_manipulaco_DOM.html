@@ -73,10 +73,47 @@ corQuadro.backgroundColor= cor;
 mudarCorDoQuadroDentro("white" );
 
 function mudarTituloH2(texto){
-let bloco = document.getElementsByTagName("h1")[0];
-bloco.innerHTML = texto;
+let bloco = document.getElementsByTagName("h1");
+bloco[0].innerHTML = texto;
 }
- mudarTituloH2("Exercício 4.5 _ JavaScript");
+ mudarTituloH2("Exercício 4.5 - JavaScript");
+
+ function mudarPraMaiuscula(){
+let paragrafo = document.getElementsByTagName("p");
+for(i=0; i < paragrafo.length; i+=1){
+  paragrafo[i].innerHTML = paragrafo[i].innerHTML.toUpperCase();
+}
+
+}
+mudarPraMaiuscula();
+/*
+function mostraNoConsole(){
+
+  let parag = document.getElementsByTagName("p");
+    for(i in parag){
+    console.log(
+      parag[i].innerHTML);
+  }
+}
+
+mostraNoConsole()
+
+*/
+
+
+
+
+  /*function mudarTexto(
+    let pElements = document.getElementsByTagName("p");
+    for(let i = 0; i < pElements.length; i+=1) {
+      let tag = pElements[i];
+      let texto = tag.innerHTML;
+      console.log(texto);
+      pElements[i].innerHTML = texto.toUpperCase();
+      }
+      }
+      mudarTexto(); 
+*/
 
 
 
