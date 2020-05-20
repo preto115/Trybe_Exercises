@@ -59,7 +59,7 @@
       // COLOQUE SEU CÓDIGO AQUI
      
 //1.Adicione a tag h1 com o texto Exercício 4.5 - JavaScript DOM como filho da tag body;
-
+  let conteudo = document.body;
         let h1 = document.createElement("h1");
         h1.innerHTML = "Exercício 4.6 - JavaScript  DOM";
         document.body.appendChild(h1);
@@ -161,7 +161,7 @@ for(t in  classes_h3){
 classes_h3[t].className = "description";
 }
 
-    
+document.getElementsByClassName("main-content")[0].removeChild(divleft);
 
     
 
