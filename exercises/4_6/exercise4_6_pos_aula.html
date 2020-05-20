@@ -58,45 +58,85 @@
     <script>
       // COLOQUE SEU CÓDIGO AQUI
      
-      //1.Adicione a tag h1 com o texto Exercício 4.5 - JavaScript DOM como filho da tag body;
+//1.Adicione a tag h1 com o texto Exercício 4.5 - JavaScript DOM como filho da tag body;
 
         let h1 = document.createElement("h1");
         h1.innerHTML = "Exercício 4.6 - JavaScript  DOM";
         document.body.appendChild(h1);
-        //2.Adicione a tag div com a classe main-content como filho da tag body;
+//2.Adicione a tag div com a classe main-content como filho da tag body;
 
         let div0 = document.createElement("div");
         div0.className = "main-content";
         document.body.appendChild(div0);
-        // 3.Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+// 3.Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
 
         let div1 = document.createElement("div");
         div1.className = "center-content";
         document.getElementsByClassName("main-content")[0].appendChild(div1);
-        //4.Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+//4.Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
 
         let pFilho = document.createElement("p");
         pFilho.innerHTML = "texto para teste";
         document.getElementsByClassName("center-content")[0].appendChild(pFilho);
 
-        //5.Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+//5.Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
 
         let divleft= document.createElement("div");
         divleft.className = "left-content";
         document.getElementsByClassName("main-content")[0].appendChild(divleft);
         
-        //6.Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
+//6.Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
 
         let divright = document.createElement("div");
         divright.className = "right-content";
         document.getElementsByClassName("main-content")[0].appendChild(divright);
 
-        //7.Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do div criado no passo 5;
+//7.Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do div criado no passo 5;
 
         let imagem = document.createElement("img");
         imagem.className = "small-image";
         imagem.src = "https://picsum.photos/200 ";
         document.getElementsByClassName("left-content")[0].appendChild(imagem);
+
+
+
+//Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+
+        let listaOrdenada = document.createElement("ul");
+        
+        let lista_1 = document.createElement("li");
+        let lista_2 = document.createElement("li");
+        let lista_3 = document.createElement("li");
+        let lista_4 = document.createElement("li");
+        let lista_5 = document.createElement("li");
+        let lista_6 = document.createElement("li");
+        let lista_7 = document.createElement("li");
+        let lista_8 = document.createElement("li");
+        let lista_9 = document.createElement("li");
+        let lista_10 = document.createElement("li");
+        
+        lista_1.innerText = "um";
+        lista_2.innerText = "dois";
+        lista_3.innerText = "tres";
+        lista_4.innerText = "quatro";
+        lista_5.innerText = "cinco";
+        lista_6.innerText = "seis";
+        lista_7.innerText = "sete";
+        lista_8.innerText = "oito";
+        lista_9.innerText = "nove";
+        lista_10.innerText = "dez";
+
+        document.getElementsByClassName("right-content")[0].appendChild(listaOrdenada);
+        document.getElementsByTagName("ul")[0].appendChild(lista_1);
+        document.getElementsByTagName("ul")[0].appendChild(lista_2);
+        document.getElementsByTagName("ul")[0].appendChild(lista_3);
+        document.getElementsByTagName("ul")[0].appendChild(lista_4);
+        document.getElementsByTagName("ul")[0].appendChild(lista_5);
+        document.getElementsByTagName("ul")[0].appendChild(lista_6);
+        document.getElementsByTagName("ul")[0].appendChild(lista_7);
+        document.getElementsByTagName("ul")[0].appendChild(lista_8);
+        document.getElementsByTagName("ul")[0].appendChild(lista_9);
+        document.getElementsByTagName("ul")[0].appendChild(lista_10);
 
 
 
