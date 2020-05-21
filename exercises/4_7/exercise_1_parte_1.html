@@ -24,17 +24,15 @@ Start with this webpage, which has several input elements and a button:
  <!--<script src="libStories.js">
  -->
  <script>
-     let botao = document.querySelector("#lib-button");
-let historia = botao.addEventListener('click', makeMadLib);
-document.querySelector("#story") = historia;
+let botao = document.querySelector("#lib-button");
+botao.addEventListener('click', makeMadLib);
 
 function makeMadLib(){
+    
 let noun = document.querySelector("#noun").value;
 let adj = document.querySelector("#adjective").value;
 let name = document.querySelector("#person").value;
-
-let texto = name + " gostava muito do seu " + noun+" "+adj;
-return texto;
+document.querySelector("#story").innerHTML = name + " gostava muito do seu " + noun+" "+adj;
 
 }
  </script>
