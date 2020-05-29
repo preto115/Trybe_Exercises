@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="" method="get">
+    <fieldset>
+      <label>Nome:</label>
+      <input class="line-form" required="required" id="nome" name="f-nome" type="text" maxlength="40" size="100"><Br/>
+      <label for="e-mail">Email:</label>
+      <input class="line-form" type="e-mail" id="e-mail" maxlength="50" required="required" size="50">
+      <label for="cpf">CPF:</label>
+      <input class="line-form" id="cpf" type="text" required="required"><br/>
+      <label for="endereco">Endereço:</label>
+      <input class="line-form" id="endereco" type="text" maxlength="200" required="required" size="100"><br/>
+      <label for="cidade">Cidade:</label><input id="cidade" type="text" required="required" maxlength="28" size="auto"/>
+      <label for="estado">Estado:</label>
+      <select name="estado" id="estado" size="1" required="required">
+      </select>
+      <label>Complemento:</label>
+      <input name="tipo" type="radio" id="tipo1" value="casa" required="required">
+      <label for="tipo1">Casa</label>
+      <input name="tipo" type="radio" id="tipo2" value="Apartamento" required="required">
+      <label for="tipo2">Apartamento</label>
+    </fieldset>
+    <fieldset>
+      <label for="resumo"></label>
+      <textarea id="resumo" type="text" required="required" maxlength="1000" cols="110"></textarea>
+      <label for="cargo">Cargo:</label><input id="cargo" maxlength="40" required="required">
+      <label for="descricao-cargo">Descricao do cargo:</label><input type="text" maxlength="500" required="required">
+    </fieldset>
+  </form> 
+  <script src="script.js"></script>
+</body>
+</html>
