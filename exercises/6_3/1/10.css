@@ -1,0 +1,18 @@
+/* Help the frogs get to their own lilypads. Although they seem close, 
+it will take both flex-direction and justify-content to get them there.
+
+use flex-direction: ( algum abaixo ) para alinhamento da direcao que os itens estao dentro do containers.
+
+row: Items are placed the same as the text direction.
+row-reverse: Items are placed opposite to the text direction.
+column: Items are placed top to bottom.
+column-reverse: Items are placed bottom to top.
+
+Notice that when you set the direction to a reversed row or column, start and end are also reversed.
+*/
+#pond {
+    display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  
+  }
