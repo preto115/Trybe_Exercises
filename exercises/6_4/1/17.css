@@ -1,0 +1,14 @@
+/*Combine order with align-self to help the frogs to their destinations.
+
+//aqui os sapos amarelo estavam junto com os verdes alinhados em primeiro lugar 
+na cima de cima, sendo e precisava passar pra linha de baixo e no canto direito
+*/
+#pond {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+order: 1;
+align-self: flex-end
+}

@@ -1,0 +1,18 @@
+/*Bring the frogs home one last time by using the CSS properties you've learned:
+//veja na imagem do exercicio corresponte como os elementos estavam desorganizados;
+justify-content
+align-items
+flex-direction
+order
+align-self
+flex-wrap
+flex-flow
+align-content
+*/
+#pond {
+  display: flex;
+flex-direction: column-reverse;
+flex-wrap: wrap-reverse;
+justify-content: center;
+align-content: space-between; 
+}

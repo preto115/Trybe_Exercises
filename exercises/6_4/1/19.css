@@ -1,0 +1,10 @@
+/*Help this army of frogs form three orderly columns using a combination 
+of flex-direction and flex-wrap.
+//aqui estavam todos os sapos de 3 cores direfentes em uma unica linha.
+foi feito quebra de linha e reorganizados em colunas.
+*/
+#pond {
+  display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}

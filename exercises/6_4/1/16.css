@@ -1,0 +1,19 @@
+/*Another property you can apply to individual items is align-self. 
+This property accepts the same values as align-items and its value for the specific item.
+
+use align-self: ( algum abaixo ) para alinhamento vertical de cada item dentro do container.
+
+flex-start: Items align to the top of the container.
+flex-end: Items align to the bottom of the container.
+center: Items align at the vertical center of the container.
+baseline: Items display at the baseline of the container.
+stretch: Items are stretched to fit the container.
+*/
+#pond {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+align-self: flex-end;
+}
