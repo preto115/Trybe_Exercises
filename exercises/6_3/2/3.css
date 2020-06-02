@@ -1,0 +1,14 @@
+/*
+A tower flashes red when it is positioned on the path; 
+you must reposition it before you can start the wave. 
+Use justify-content to get your towers into better positions. 
+justify-content accepts the following values:
+*/
+.tower-group-1 {
+display: flex;
+justify-content: center;
+}
+.tower-group-2 {
+display: flex;
+justify-content: space-around;
+}

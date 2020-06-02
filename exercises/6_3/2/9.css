@@ -1,0 +1,15 @@
+/* This time each group contains a super tower! 
+Super towers take a while to reload but damage every enemy in their attack range. 
+Use the properties you've learned to score 80 or higher!
+*/
+.tower-group-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    }
+.tower-group-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    }

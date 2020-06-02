@@ -1,0 +1,19 @@
+/* Your job is to stop the incoming enemies from getting past your defenses. 
+Unlike other tower defense games, you must position your towers using CSS!
+
+We'll start with container properties. A flexbox container has a main axis and a cross axis. 
+Your job is to stop the incoming enemies from getting past your defenses. Unlike other tower defense games, you must position your towers using CSS!
+
+We'll start with container properties. A flexbox container has a main axis and a cross axis.
+
+Use the justify-content property on the tower group container to move your towers into effective positions. 
+justify-content positions a container's items along the main axis and accepts the following values:
+*/
+.tower-group-1 {
+display: flex;
+justify-content: flex-end;
+}
+.tower-group-2 {
+display: flex;
+justify-content: center;
+}

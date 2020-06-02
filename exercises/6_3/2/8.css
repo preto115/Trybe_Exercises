@@ -1,0 +1,19 @@
+/* Accordingly, flex-direction accepts the following values:
+
+row: lay out the main axis from left to right
+row-reverse: lay out the main axis from right to left
+column: lay out the main axis from top to bottom
+column-reverse: lay out the main axis from bottom to top
+
+*/
+.tower-group-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+.tower-group-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }

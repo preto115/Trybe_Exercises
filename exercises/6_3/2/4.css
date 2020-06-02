@@ -1,0 +1,21 @@
+/* Now some of the groups have vertical space, 
+which is the perfect opportunity to use the align-items property. 
+align-items positions a container's items across its cross axis 
+and accepts the following values:
+
+flex-start: align items across the start of a container's cross axis
+flex-end: align items across the end of the cross axis
+center: align items across the center of the cross axis
+Note: align-items also accepts the values baseline 
+(align items such that their baselines line up) 
+and stretch (stretch items such that they span the entire cross axis), 
+but these values cannot be used in Flexbox Defense.
+*/
+.tower-group-1 {
+    display: flex;
+    align-items: flex-end;
+    }
+.tower-group-2 {
+    display: flex;
+    align-items: flex-end;
+    }

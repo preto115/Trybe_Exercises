@@ -1,0 +1,16 @@
+/* This time you have more towers, but less horizontal room to work with.
+The flex-direction property is your answer. 
+flex-direction defines the directional layout of the main and cross axes in the flex container.
+For example, although the main axis lays out horizontally and the cross axis lays out vertically by default, 
+flex-direction can rotate the axes such that the main axis lays out 
+vertically and the cross axis lays out horizontally. Here's what this looks like:
+
+*/
+.tower-group-1 {
+    display: flex;
+    flex-direction: column;
+    }
+.tower-group-2 {
+    display: flex;
+    flex-direction: column;
+    }
