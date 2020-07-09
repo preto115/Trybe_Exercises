@@ -4,9 +4,15 @@
 
 ### Code ###
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+node_modules/
+.travis.yml
+.stylelintrc.json
+.gitignore
+.eslintrc
+.editorconfig
+.codeclimate.yml
+package.json,
+package-lock.json
+sd-05-live-lectures/
 
 # End of https://www.gitignore.io/api/code
