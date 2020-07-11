@@ -15,7 +15,7 @@ const JSX = <h1>Hello JSX!</h1>;
 As you would expect, ReactDOM.render() must be called after the JSX element declarations, just like how you must declare variables before using them.The code editor has a simple JSX component. Use the ReactDOM.render() method to render this component to the page.  
 You can pass defined JSX elements directly in as the first argument and use document.getElementById() to select the DOM node to render them to. There is a div with id='challenge-node' available for you to use. Make sure you don't change the JSX constant.
 */
-const JSX = (
+const JSX1 = (
   <div>
     <h1>Hello World</h1>
     <p>Lets render this to the DOM</p>
@@ -27,7 +27,7 @@ const JSX = (
 Define a new constant JSX that renders a div which contains the following elements in order: An h1, a p, and an unordered list that contains three li items. You can include any text you want within each element.
 Note: When rendering multiple elements like this, you can wrap them all in parentheses, but it's not strictly required. Also notice this challenge uses a div tag to wrap all the child elements within a single parent element. If you remove the div, the JSX will no longer transpile. Keep this in mind, since it will also apply when you return JSX elements in React components.
   */
- const JSX = (<div>
+ const JSX2 = (<div>
   <h1>Meu primeiro App</h1>
   <p>Estou aprendendo React</p>
   <ul>
@@ -41,7 +41,7 @@ React: Add Comments in JSX
 JSX is a syntax that gets compiled into valid JavaScript. Sometimes, for readability, you might need to add comments to your code. Like most programming languages, JSX has its own way to do this.
 To put comments inside JSX, you use the syntax '{/* */ //}' to wrap around the comment text.
 //T he code editor has a JSX element similar to what you created in the last challenge. Add a comment somewhere within the provided div element, without modifying the existing h1 or p elements.
-const JSX = (
+const JSX3 = (
   <div>
   {/*React is awnsome */}
     <h1>This is a block of JSX</h1>
@@ -53,7 +53,7 @@ ReactDOM offers a simple method to render React elements to the DOM which looks 
 As you would expect, ReactDOM.render() must be called after the JSX element declarations, just like how you must declare variables before using them.
 The code editor has a simple JSX component. Use the ReactDOM.render() method to render this component to the page. You can pass defined JSX elements directly in as the first argument and use document.getElementById() to select the DOM node to render them to. There is a div with id='challenge-node' available for you to use. Make sure you don't change the JSX constant.
 */
-const JSX = (
+const JSX4 = (
   <div>
     <h1>Hello World</h1>
     <p>Lets render this to the DOM</p>
@@ -67,7 +67,7 @@ In fact, the naming convention for all HTML attributes and event references in J
 
 Apply a class of myDiv to the div provided in the JSX code.
 */
-const JSX = (
+const JSX5 = (
   <div className='myDiv'>
     <h1>Add a class to this div</h1>
   </div>
@@ -76,7 +76,7 @@ const JSX = (
 In JSX, the rules are a little different. Any JSX element can be written with a self-closing tag, and every element must be closed. The line-break tag, for example, must always be written as <br /> in order to be valid JSX that can be transpiled. A <div>, on the other hand, can be written as <div /> or <div></div>. The difference is that in the first syntax version there is no way to include anything in the <div />. You will see in later challenges that this syntax is useful when rendering React components.
 Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don't change any of the content - you only need to close tags where they are needed.
 */
-const JSX = (
+const JSX6 = (
   <div>
     
     <h2>Welcome to React!</h2> <br/>
@@ -90,7 +90,7 @@ There are two ways to create a React component. The first way is to use a JavaSc
 To create a component with a function, you simply write a JavaScript function that returns either JSX or null. One important thing to note is that React requires your function name to begin with a capital letter. Here's an example of a stateless functional component that assigns an HTML class in JSX:
 Because a JSX component represents HTML, you could put several components together to create a more complex HTML page. This is one of the key advantages of the component architecture React provides. It allows you to compose your UI from many separate, isolated components. This makes it easier to build and maintain complex user interfaces.
 */
-const MyComponent = function() {
+const MyComponent = () =>{
   return (
   <div>
     <h2>Let's Get started.</h2>
@@ -114,7 +114,7 @@ class Blablabla extends React.Component {
 This creates an ES6 class Blablabla which extends the React.Component class. So the Blablabla class now has access to many useful React features, such as local state and lifecycle hooks. Don't worry if you aren't familiar with these terms yet, they will be covered in greater detail in later challenges. 
 Also notice the Blablabla class has a constructor defined within it that calls super(). It uses super() to call the constructor of the parent class, in this case React.Component. The constructor is a special method used during the initialization of objects that are created with the class keyword. It is best practice to call a component's constructor with super, and pass props to both. This makes sure the component is initialized properly. For now, know that it is standard for this code to be included. Soon you will see other uses for the constructor as well as props.
 */
-class MyComponent extends React.Component {
+class MyComponentClass extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -152,3 +152,4 @@ class ParentComponent extends React.Component {
     );
   }
 };
+
