@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Pre_Aula from './exercicios-pre_aula';
+import Pokedex from './pokedex';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Pokedex />
+    <Pre_Aula />
   </React.StrictMode>,
   document.getElementById('root')
 );
