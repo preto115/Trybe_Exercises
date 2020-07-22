@@ -9,6 +9,7 @@ import { Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
+    const num = ['1', '2', '3']
     return (
       <BrowserRouter>
       <header>
@@ -18,7 +19,9 @@ class App extends Component {
       </header>
           <Route  exact path="/" component={Home}></Route>
           <Route  path="/about" component={About}></Route>
-          <Route  path="/users" render={ (props) => <Users  {...props} greetingMessage={'Good Morning'}/>}></Route>      
+          <Route  path="/users/:id" component={Users}></Route>
+
+          <Route  path="/users" render={ (props) => <Users  {...props} greetingMessage={'Good Morning'} pag={num} />}></Route>      
       </BrowserRouter>
     );
   }
