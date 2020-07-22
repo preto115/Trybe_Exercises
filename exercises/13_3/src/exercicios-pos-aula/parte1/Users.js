@@ -4,32 +4,31 @@ import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
 import App from '../../App';
 
 const Par = (props) => {
-  const id = props.match.params;
-  if (id) return (
+  return (
   <div>
-  <h2>Usuário: {id.user}</h2>
+  <h2>Primeiro Router: {props.id}</h2>
   <p> {props.teste} this is my awesome Users component para voce </p>
   </div>
   );
 };
 
 const Users = (props) => {
-  const id = props.match.params;
-return (
-  <BrowserRouter>
+  const id = props.match.params.id;
+  if (id) return <Par teste={'Good Afternoon'}  id={id}/>
+  return (
   <div>
-    <h2>Users: {id.id}</h2>
+    <h2>Segundo Router: com array [{props.pag}]</h2>
     <p> {props.greetingMessage} My awesome About component </p>
-       <Link to={`/users/1}`}> users:1 </Link>
-       <Link to={`/users/2`}> users:2 </Link>
-       <Link to={`/users/3`}> users:3 </Link>
-       <main>
-       <Route  path='/users/:user' component={Par}></Route>
-      <Route  path={`/users/${id}`} component={Par}><Par teste={'Good After'}/></Route>      
-
-       </main>
+      {props.pag.map(e => (
+        <div>
+         <h2>Users: {e}</h2>
+          <Link to={`/users/${e}`}> users:{e} </Link>
+          </div>
+      ))}
+       {/* <Link to={`/users/2`}> users:2 </Link>
+       <Link to={`/users/3`}> users:3 </Link> */}
+      
   </div>
-  </BrowserRouter>
   );
 };
 // {/* <header>
